@@ -3,7 +3,6 @@ clc
 
 e = regroup_series();
 
-
 vol = e.getSerie('run').getVolume('^s5wts').removeEmpty();
 glm_dir = e.mkdir('mdl','clean',{vol.getSerie.tag}); glm_dir = cellstr(glm_dir{1});
 rp = vol.getSerie().getRP('multiple_regressors');
